@@ -1,0 +1,345 @@
+// VARIABLES
+
+@background-white: #ECEFD8;
+@grey-39: #393939;
+@grey-text: #191A18;
+@green: #849561;
+
+// COMMON SETUP
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background-color: @background-white;
+}
+
+// TABLET FIRST
+
+h2 {
+    color: @green;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+button {
+    padding: 1.5em 3em;
+
+    border-radius: 0;
+    border: 1px solid;
+
+    letter-spacing: 0.005em;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    display: block;
+    margin: auto;
+}
+
+header {
+    nav {
+        background-color: @background-white;
+
+        ul {
+            max-width: 768px;
+            margin: auto;
+            padding: 4%;
+
+            display: flex;
+            justify-content: space-around;
+
+            list-style: none;
+
+            a {
+                color: @grey-39;
+                font-weight: 300;
+                font-size: 1.25em;
+                text-transform: uppercase;
+                letter-spacing: 0.23em;
+            }
+        }
+    }
+
+    .hero {
+        background-image: url(img/header-bg-medium.png);
+        background-size: contain;
+        width: 100%;
+        aspect-ratio: 768 / 560;
+
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            gap: 5%;
+
+
+            font-size: 1.75em;
+            font-weight: 400;
+            letter-spacing: 0.085em;
+            color: #FFFFFF;
+
+            p {
+                padding: 0 0.25em;
+                border-top: 1px solid #FFF;
+                border-bottom: 1px solid #FFF;
+            }
+        }
+    }
+}
+
+
+.bienvenue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    padding: 5% 0;
+
+    h1 {
+        color: @grey-39;
+        font-size: 1.875em;
+        font-weight: 700;
+    }
+
+
+    p {
+        max-width: 518px;
+
+        color: @grey-text;
+        font-size: 1.25em;
+        font-weight: 300;
+        text-align: center;
+        line-height: 1.75em;
+    }
+
+    button {
+        background-color: @green;
+        border-color: #FFF;
+        box-shadow: 0 4px 4px #1313134B;
+        color: #EED690;
+    }
+}
+
+.galerie {
+    background-color: @grey-39;
+
+    padding-bottom: 7em;
+
+    h2 {
+        padding: 2em;
+    }
+
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 5em;
+
+        div {
+            background-color: @green;
+            position: relative;
+            max-width: 316px;
+            padding-bottom: 4em;
+
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            text-align: center;
+            color: #FFF;
+
+            h3 {
+                padding: 0.5em 3em;
+                font-size: 1.5em;
+                font-weight: 700;
+            }
+
+            p {
+                padding: 0 1em;
+                font-size: 1.375em;
+            }
+
+            button {
+                position: absolute;
+                bottom: -1.75em;
+                left: 50%;
+                translate: -50%;
+
+                background-color: @grey-39;
+                padding: 1em 2em;
+
+                color: inherit;
+                border-color: #9AB464;
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+}
+
+.nympheas {
+    background-color: #1D1B1B;
+    color: #FFF;
+
+    padding: 0 2.2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    .bell-icon {
+        width: 96px;
+        aspect-ratio: 1;
+        margin: 0 auto;
+        margin-top: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 1px solid #FFF;
+
+        svg {
+            width: 53px;
+            height: 73px;
+        }
+    }
+
+    h2 {
+        color: inherit;
+        text-transform: none;
+        font-size: 1.685em;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+
+        padding: 1em 0;
+    }
+
+    p {
+        font-size: 1.375em;
+        font-weight: 200;
+        line-height: 2em;
+        text-align: center;
+
+        // min-width: 697px;
+        max-width: 807px;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+}
+
+.fondateur {
+    background-color: @grey-39;
+    padding: 4em 2em;
+    letter-spacing: 0.23em;
+    font-weight: 700;
+
+    h2 {
+        padding-bottom: 5em;
+        font-size: 1.75em;
+    }
+
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+
+        div {
+            max-width: 336px;
+            padding: 7em 1em 2em 1em;
+            position: relative;
+
+
+            background-color: @green;
+            color: #FFF;
+
+            img {
+                position: absolute;
+                top: -67px;
+                left: 50%;
+                translate: -50%;
+            }
+
+            h3 {
+                padding: 0.5em 0 1em 0;
+                font-size: 1.25em;
+                border-top: 1px solid #FFF;
+            }
+
+            p {
+                font-size: 1em;
+                font-weight: 300;
+                padding-bottom: 1em;
+            }
+
+            a {
+                background-color: @grey-39;
+                color: #FFF;
+                width: 39px;
+                aspect-ratio: 1;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 769px) {
+    header {
+        nav {
+            ul {
+                padding: 1%;
+
+                a {
+                    font-size: 1em;
+                }
+            }
+        }
+
+        .hero {
+            background-image: url(img/header-bg.png);
+            aspect-ratio: 1440 / 400;
+        }
+    }
+
+    .bienvenue {
+        p {
+            max-width: 618px;
+        }
+    }
+
+    .nympheas {
+        background-color: #1D1B1B;
+        background-image: url(img/modern-industrial.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        aspect-ratio: 3.84;
+
+        p {
+            font-size: 1em;
+        }
+    }
+
+    .fondateur {
+        .container {
+            div {
+                max-width: 462px;
+            }
+        }
+    }
+}
